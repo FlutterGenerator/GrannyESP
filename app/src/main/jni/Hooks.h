@@ -97,7 +97,7 @@ void hack_thread() {
      //Camera.WorldToScreenPoint(Vector3 position);
      get_screenpos = (Vector3 (*)(void *, Vector3)) getAbsoluteAddress(targetLibName, 0x172D88C);
     
-    Player.Update();
+    //Player.Update();
     MSHookFunction((void *) getAbsoluteAddress(targetLibName, 0x5706A4),
         (void *) &Player_update,
         (void **) &old_Player_update);
