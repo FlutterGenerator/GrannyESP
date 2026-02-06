@@ -89,7 +89,7 @@ void hack_thread() {
      get_Transform = (void *(*)(void *)) getAbsoluteAddress(targetLibName, 0x239C588);
     
      //Transform.get_position();
-     get_position = (Vector3 (*)(void*)) getAbsoluteAddress(targetLibName, 0x23AEF8C);
+     get_position = (Vector3 (*)(void*)) getAbsoluteAddress(targetLibName, 0x23AEEC4);
     
      //Camera.get_main();
      get_camera = (void *(*)()) getAbsoluteAddress(targetLibName, 0x2364B78);
