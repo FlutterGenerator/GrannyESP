@@ -109,7 +109,7 @@ void CheckOverlayPermission(JNIEnv *env, jclass thiz, jobject ctx){
 
 void Init(JNIEnv *env, jobject thiz, jobject ctx, jobject title, jobject subtitle){
     //Set sub title
-    setText(env, title, OBFUSCATE("<b>Granny ESP 1.8.8</b>"));
+    setText(env, title, OBFUSCATE("<b>Granny ESP 1.8.2</b>"));
 
     //Set sub title
     setText(env, subtitle, OBFUSCATE("ESP MOD MENU | Credit : @tojik_proof_93"));
