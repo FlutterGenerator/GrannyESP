@@ -42,7 +42,7 @@ void DrawESP(ESP esp, int screenWidth, int screenHeight) {
          Allplayers += "All Objects: ";
          Allplayers += std::to_string((int32_t) players.size());
   
-         esp.DrawText(Color::Black(), Allplayers.c_str(), Vector2(screenWidth / 2 ,screenHeight / 2), 35.0f);      
+         esp.DrawText(Color::Red(), Allplayers.c_str(), Vector2(screenWidth / 2 ,screenHeight / 2), 35.0f);      
       }  
     
   if(Esp) {  
