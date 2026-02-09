@@ -8,7 +8,7 @@
 #include <Substrate/CydiaSubstrate.h>
 
 //Target lib here
-#define targettargetLibName OBFUSCATE(targetLibName)
+#define targetLibName OBFUSCATE("libil2cpp.so")
 
 void *(*get_Transform)(void *instance);
 Vector3 (*get_position)(void *instance);
