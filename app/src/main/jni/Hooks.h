@@ -85,19 +85,19 @@ void hack_thread() {
     } while (!isLibraryLoaded(targetLibName));
 
     //UnityEngine class Component public Transform get_transform() { };
-    get_Transform = (void *(*)(void *)) getAbsoluteAddress(targetLibName,0x17AA6C4);
+    get_Transform = (void *(*)(void *)) getAbsoluteAddress(targetLibName,0x17A9288);
     
     //UnityEngine class Transform public Vector3 get_position() { };
-    get_position = (Vector3 (*)(void*)) getAbsoluteAddress(targetLibName, 0x17B66D8);
+    get_position = (Vector3 (*)(void*)) getAbsoluteAddress(targetLibName, 0x17B52A8);
     
     //UnityEngine public sealed class Camera public static Camera get_main() { };
-    get_camera = (void *(*)()) getAbsoluteAddress(targetLibName, 0x179EED4);
+    get_camera = (void *(*)()) getAbsoluteAddress(targetLibName, 0x179DA98);
     
     //UnityEngine public sealed class Camera public Vector3 WorldToScreenPoint(Vector3 position) { };
-    get_screenpos = (Vector3 (*)(void *, Vector3)) getAbsoluteAddress(targetLibName, 0x179E9FC);
+    get_screenpos = (Vector3 (*)(void *, Vector3)) getAbsoluteAddress(targetLibName, 0x179D5C0);
     
     // public class EnemyAIGranny : MonoBehaviour public virtual void FixedUpdate() { };
-    MSHookFunction((void *) getAbsoluteAddress(targetLibName, 0x581338), 
+    MSHookFunction((void *) getAbsoluteAddress(targetLibName, 0x580698), 
     (void *) &Player_update,
     (void **) &old_Player_update);                                  
 }
