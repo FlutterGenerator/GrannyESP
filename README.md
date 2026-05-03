@@ -3,8 +3,8 @@
 
 [![License Info](https://img.shields.io/badge/License-GPL--3.0-blue.svg?style=flat-square)](https://github.com/FlutterGenerator/GrannyESP/blob/master/LICENSE)
 
-# Granny Esp 1.8.1 (63)
-**Google Play Release Date:** 24 August 2023
+# Granny Esp 1.8.3 (69)
+**Google Play Release Date:** 7 August 2025
 
 ![](img.jpg)
 
