@@ -1,4 +1,4 @@
-#include "Menu/Setup.h"
+#include "../Menu/Setup.h"
 // Register your class native methods. This is to hide function names from disassembler
 // See more: https://developer.android.com/training/articles/perf-jni#native-libraries
 

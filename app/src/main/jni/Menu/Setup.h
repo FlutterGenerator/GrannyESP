@@ -1,6 +1,6 @@
 #include <sstream>
-#include "Menu/Menu.h"
-#include "Menu/get_device_api_level_inlines.h"
+#include "../Menu/Menu.h"
+#include "../Menu/get_device_api_level_inlines.h"
 
 //Jni stuff from MrDarkRX https://github.com/MrDarkRXx/DarkMod-Floating
 void setDialog(jobject ctx, JNIEnv *env, const char *title, const char *msg){
@@ -109,7 +109,7 @@ void CheckOverlayPermission(JNIEnv *env, jclass thiz, jobject ctx){
 
 void Init(JNIEnv *env, jobject thiz, jobject ctx, jobject title, jobject subtitle){
     //Set sub title
-    setText(env, title, OBFUSCATE("<b>Granny ESP 1.8.10</b>"));
+    setText(env, title, OBFUSCATE("<b>Granny ESP 1.8.12</b>"));
 
     //Set sub title
     setText(env, subtitle, OBFUSCATE("ESP MOD MENU | Credit : @tojik_proof_93"));
